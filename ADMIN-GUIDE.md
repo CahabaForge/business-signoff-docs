@@ -112,7 +112,7 @@ Starting with Jira 9.4.17 / 10.x, the upload button is hidden by default.
 6. Click **Upload** — Jira installs the plugin
 7. No restart required
 
-![SCREENSHOT: Jira "Manage Apps" page with the "Upload app" dialog open showing the file selector and the Business Sign-off JAR selected](../website/public_html/docs/admin-guide/images/upload-app.png)
+![SCREENSHOT: Jira "Manage Apps" page with the "Upload app" dialog open showing the file selector and the Business Sign-off JAR selected](./images/upload-app.png)
 
 ### Step 4: Verify Installation
 
@@ -121,7 +121,7 @@ Starting with Jira 9.4.17 / 10.x, the upload button is hidden by default.
 3. Verify the version number matches: X.Y.Z
 4. The plugin is now active and ready to configure
 
-![SCREENSHOT: Jira "Manage Apps" page showing Business Sign-off Plugin listed as Enabled with the version number and Configure link visible](../website/public_html/docs/admin-guide/images/manage-app.png)
+![SCREENSHOT: Jira "Manage Apps" page showing Business Sign-off Plugin listed as Enabled with the version number and Configure link visible](./images/manage-app.png)
 
 ### Upgrading
 
@@ -148,7 +148,7 @@ Business Sign-off uses a custom license framework. Licenses are managed through 
 
 Only **Jira System Administrators** can access this page.
 
-![SCREENSHOT: The License Administration page showing the license status banner, license details table, and the license key installation form](../website/public_html/docs/admin-guide/images/manage-license.png)
+![SCREENSHOT: The License Administration page showing the license status banner, license details table, and the license key installation form](./images/manage-license.png)
 
 ### License States
 
@@ -172,7 +172,7 @@ Only **Jira System Administrators** can access this page.
 
 The plugin immediately reflects the new license state. No restart required.
 
-![SCREENSHOT: The License Administration page showing the license key textarea with the Install button, and the license details table showing licensee, type, expiry date, seats, and server IDs](../website/public_html/docs/admin-guide/images/install-license.png)
+![SCREENSHOT: The License Administration page showing the license key textarea with the Install button, and the license details table showing licensee, type, expiry date, seats, and server IDs](./images/install-license.png)
 
 ### License Details
 
@@ -221,7 +221,7 @@ Toggle the **Enable Plugin** switch to activate or deactivate Business Sign-off 
 - **Remove all pending approvers** — immediately removes all ADDED/PENDING approvers from every project
 - **Allow pending approvals to finish** (Finishing Mode) — the plugin enters a transitional state where existing approvers can still complete their decisions, but no new approvers can be added. Once all pending approvals are resolved, the plugin fully disables.
 
-![SCREENSHOT: The disable confirmation dialog showing "Finishing Mode" options for handling issues with pending approvals across projects](../website/public_html/docs/admin-guide/images/finishing-mode.png)
+![SCREENSHOT: The disable confirmation dialog showing "Finishing Mode" options for handling issues with pending approvals across projects](./images/finishing-mode.png)
 
 ### Post-Enable: Full Re-index Required
 
@@ -232,7 +232,7 @@ To run a re-index:
 2. Click **Re-Index** (foreground or background)
 3. Wait for completion
 
-![SCREENSHOT: Jira System > Indexing page showing the re-index options with the foreground re-index button highlighted](../website/public_html/docs/admin-guide/images/re-indexing.png)
+![SCREENSHOT: Jira System > Indexing page showing the re-index options with the foreground re-index button highlighted](./images/re-indexing.png)
 
 ### Approval Threshold
 
@@ -250,7 +250,7 @@ Set the global default percentage of approvals required for an issue to pass:
 
 **Minimum threshold**: Sets the lowest threshold a project can configure (prevents projects from setting an inappropriately low bar).
 
-![SCREENSHOT: The Approval Threshold section of the global config page showing the threshold dropdown set to 75%, the "Allow project override" checkbox checked, and the minimum threshold dropdown set to 50%](../website/public_html/docs/admin-guide/images/global-approval-threshold.png)
+![SCREENSHOT: The Approval Threshold section of the global config page showing the threshold dropdown set to 75%, the "Allow project override" checkbox checked, and the minimum threshold dropdown set to 50%](./images/global-approval-threshold.png)
 
 ### Segregation of Duties (SoD)
 
@@ -263,7 +263,7 @@ Configure which issue participants cannot serve as approvers:
 
 SoD violations are enforced at the API level — the plugin will reject any attempt to add a restricted user as an approver or record their decision. Violations are logged in the audit trail with a `FAIL` SoD result.
 
-![SCREENSHOT: The Segregation of Duties section of the global config page showing both checkboxes checked (assignee and reporter cannot approve) with the "Allow project override" checkbox visible](../website/public_html/docs/admin-guide/images/global-sod.png)
+![SCREENSHOT: The Segregation of Duties section of the global config page showing both checkboxes checked (assignee and reporter cannot approve) with the "Allow project override" checkbox visible](./images/global-sod.png)
 
 ### Comment Requirements
 
@@ -278,7 +278,7 @@ Configure when approvers must provide a comment with their decision:
 
 **Allow project override**: When checked, project administrators can set different comment requirements.
 
-![SCREENSHOT: The Comment Requirements section showing the radio buttons (All, Approvals Only, Returns Only, Never) with "Returns Only" selected and the project override checkbox checked](../website/public_html/docs/admin-guide/images/comments-required.png)
+![SCREENSHOT: The Comment Requirements section showing the radio buttons (All, Approvals Only, Returns Only, Never) with "Returns Only" selected and the project override checkbox checked](./images/comments-required.png)
 
 ### Eligible Approver Controls
 
@@ -296,7 +296,7 @@ Restrict who can serve as an approver across the instance:
 
 **Allow project override**: When checked, project administrators can configure different eligible approver filters.
 
-![SCREENSHOT: The Eligible Approvers section showing "Selected Users" mode selected, with the "Project Roles" filter enabled and two roles checked (Developers, Reviewers), and the "User Groups" filter enabled with one group checked (approvers-group)](../website/public_html/docs/admin-guide/images/global-eligible-approvers.png)
+![SCREENSHOT: The Eligible Approvers section showing "Selected Users" mode selected, with the "Project Roles" filter enabled and two roles checked (Developers, Reviewers), and the "User Groups" filter enabled with one group checked (approvers-group)](./images/global-eligible-approvers.png)
 
 ### Approver Management Permissions
 
@@ -308,7 +308,7 @@ Configure who can add and remove approvers on issues:
 
 **Note:** At least one of these checkboxes must be selected. Workflow automation (post-functions, Automation for Jira) and system automation accounts can always add and remove approvers regardless of these settings.
 
-![SCREENSHOT: The Approver Management section showing three checkboxes for reporter, assignee, and administrator management permissions](../website/public_html/docs/admin-guide/images/global-approver-management.png)
+![SCREENSHOT: The Approver Management section showing three checkboxes for reporter, assignee, and administrator management permissions](./images/global-approver-management.png)
 
 ### Debug Logging
 
@@ -316,7 +316,7 @@ Enable detailed DEBUG-level logging for troubleshooting. Debug logging automatic
 
 Toggle on, set the expiry duration (5 minutes, 30 minutes, 1 hour, 2 hours, 4 hours, 8 hours, or 24 hours), and reproduce the issue. View logs in Jira's application log (`atlassian-jira.log`). All plugin log entries use the `io.cahaba.jira.signoff` logger prefix.
 
-![SCREENSHOT: The Debug Logging section showing the toggle switch, the expiry duration dropdown, and the current status indicator](../website/public_html/docs/admin-guide/images/debug-logging.png)
+![SCREENSHOT: The Debug Logging section showing the toggle switch, the expiry duration dropdown, and the current status indicator](./images/debug-logging.png)
 
 ### Audit CSV Export
 
@@ -330,7 +330,7 @@ Export approval history data to CSV format for offline analysis or auditor deliv
 
 Exports are generated as background tasks and tracked in the database. CSV files are written to the Jira shared home directory and are accessible from any cluster node.
 
-![SCREENSHOT: The Audit Export section showing the project dropdown, date range pickers, the Start Export button, and a completed export with a Download link](../website/public_html/docs/admin-guide/images/export-csv.png)
+![SCREENSHOT: The Audit Export section showing the project dropdown, date range pickers, the Start Export button, and a completed export with a Download link](./images/export-csv.png)
 
 ---
 
@@ -342,7 +342,7 @@ Access project-level settings from:
 
 Only **Project Administrators** can access project configuration.
 
-![SCREENSHOT: The Project Settings sidebar showing the "Business Sign-off" menu item, and the project configuration page with sections for Enable, Panel Visibility, and Approval Settings](../website/public_html/docs/admin-guide/images/project-settings.png)
+![SCREENSHOT: The Project Settings sidebar showing the "Business Sign-off" menu item, and the project configuration page with sections for Enable, Panel Visibility, and Approval Settings](./images/project-settings.png)
 
 ### Enable for Project
 
@@ -370,7 +370,7 @@ Choose which issues show the Business Sign-off panel:
 - **All Issue Types**: Panel appears on every issue in the project
 - **Selected Issue Types**: Panel appears only on chosen issue types (e.g., "Story", "Bug")
 
-![SCREENSHOT: The Panel Visibility section showing "Selected Issue Types" selected with checkboxes for Bug, Story, Task, and Epic visible](../website/public_html/docs/admin-guide/images/approval-panel-visibility.png)
+![SCREENSHOT: The Panel Visibility section showing "Selected Issue Types" selected with checkboxes for Bug, Story, Task, and Epic visible](./images/approval-panel-visibility.png)
 
 ### Email Notification Settings
 
@@ -382,7 +382,7 @@ Email notification preferences are configured at the project level:
 - **Email assignee on outcome**: Notify the issue assignee on the final approval result (configurable: Approved Only, Returned Only, Approved or Returned, Never)
 - **Email assignee on each decision**: Notify the assignee for each individual decision (configurable: Approved Only, Returned Only, Approved or Returned, Never)
 
-![SCREENSHOT: The project configuration Email Notifications section showing the checkbox for "Email approver when added" and dropdown selectors for outcome-based notifications](../website/public_html/docs/admin-guide/images/email-notifications.png)
+![SCREENSHOT: The project configuration Email Notifications section showing the checkbox for "Email approver when added" and dropdown selectors for outcome-based notifications](./images/email-notifications.png)
 
 ### Project Overrides
 
@@ -394,7 +394,7 @@ If allowed by the global configuration, project administrators can override:
 
 Settings left at their default (null) inherit the global value. Explicitly set values override the global default.
 
-![SCREENSHOT: The project configuration page showing override sections with "Use Global Default" as the default selection and a dropdown to set a custom value](../website/public_html/docs/admin-guide/images/use-org-default.png)
+![SCREENSHOT: The project configuration page showing override sections with "Use Global Default" as the default selection and a dropdown to set a custom value](./images/use-org-default.png)
 
 ---
 
@@ -428,7 +428,7 @@ For automated approval enforcement, add workflow functions to your project's wor
    - **Issue is Approved (Business Sign-off)**: Transition available only if approval threshold is met
    - **Issue is Returned (Business Sign-off)**: Transition available only if approval has failed
 
-![SCREENSHOT: The workflow editor's "Add Condition" dialog showing the three Business Sign-off conditions listed under the plugin category](../website/public_html/docs/admin-guide/images/workflow-conditions.png)
+![SCREENSHOT: The workflow editor's "Add Condition" dialog showing the three Business Sign-off conditions listed under the plugin category](./images/workflow-conditions.png)
 
 #### Adding a Workflow Validator
 
@@ -438,7 +438,7 @@ For automated approval enforcement, add workflow functions to your project's wor
    - **Require Approval Passed (Business Sign-off)**: Block transition unless approval passed
    - **Require Group/Role Approval (Business Sign-off)**: Block transition unless approvers from specific groups and/or roles have approved. Configure required groups and roles in the validator settings — at least one approver from each configured group/role must have approved.
 
-![SCREENSHOT: The workflow editor's "Add Validator" dialog showing the three Business Sign-off validators, with "Require Group/Role Approval" expanded to show the role/group configuration fields](../website/public_html/docs/admin-guide/images/workflow-validators.png)
+![SCREENSHOT: The workflow editor's "Add Validator" dialog showing the three Business Sign-off validators, with "Require Group/Role Approval" expanded to show the role/group configuration fields](./images/workflow-validators.png)
 
 #### Adding a Workflow Post-Function
 
@@ -449,7 +449,7 @@ For automated approval enforcement, add workflow functions to your project's wor
    - **Notify Approvers (Business Sign-off)**: Send email notification to all pending approvers
    - **Reset Approval Status (Business Sign-off)**: Reset all approver decisions to Pending. Optionally sends a notification to all approvers after reset.
 
-![SCREENSHOT: The workflow editor's "Add Post Function" dialog showing the four Business Sign-off post-functions listed](../website/public_html/docs/admin-guide/images/workflow-post-functions.png)
+![SCREENSHOT: The workflow editor's "Add Post Function" dialog showing the four Business Sign-off post-functions listed](./images/workflow-post-functions.png)
 
 ### Step 4: Configure Custom Fields (Optional)
 
@@ -470,7 +470,7 @@ Add the BSO - Approvers and BSO - Status custom fields to your screens:
    - Add "BSO - Status" (recommended: View screen only, since it's read-only)
    - Add "BSO - Approvers" (recommended: Create and Edit screens for approver selection)
 
-![SCREENSHOT: The Jira Screens administration page showing the Edit screen with "BSO - Approvers" field added, and the View screen with "BSO - Status" field added](../website/public_html/docs/admin-guide/images/create-issue.png)
+![SCREENSHOT: The Jira Screens administration page showing the Edit screen with "BSO - Approvers" field added, and the View screen with "BSO - Status" field added](./images/create-issue.png)
 
 ---
 
@@ -502,7 +502,7 @@ SoD is enforced at the API level. To verify it's working:
 2. Try to add yourself as an approver — the plugin should reject this with a "Segregation of Duties" error
 3. Check the audit trail — the failed attempt is recorded with `sodResult: FAIL`
 
-![SCREENSHOT: The issue panel showing the SoD enforcement: an attempted approver addition is blocked with an error message "User cannot be an approver due to Segregation of Duties — user is the issue assignee"](../website/public_html/docs/admin-guide/images/sod-approver.png)
+![SCREENSHOT: The issue panel showing the SoD enforcement: an attempted approver addition is blocked with an error message "User cannot be an approver due to Segregation of Duties — user is the issue assignee"](./images/sod-approver.png)
 
 ---
 
@@ -537,7 +537,7 @@ On any issue with Business Sign-off enabled:
 2. Expand the **Audit History** section
 3. View chronological list of all approval actions
 
-![SCREENSHOT: The expanded Audit History section on an issue showing a timeline of actions with actor names, action types, timestamps, and comments](../website/public_html/docs/admin-guide/images/approval-history.png)
+![SCREENSHOT: The expanded Audit History section on an issue showing a timeline of actions with actor names, action types, timestamps, and comments](./images/approval-history.png)
 
 ### Exporting Audit Data
 
@@ -1897,7 +1897,7 @@ This JQL function is registered but currently returns empty results. Use the BSO
 5. Check `atlassian-jira.log` for entries with the `io.cahaba.jira.signoff` logger prefix
 6. Debug logging automatically expires to prevent log bloat
 
-![SCREENSHOT: The Debug Logging section of the global config page with the toggle ON, showing "Debug logging active — expires in 2hr"](../website/public_html/docs/admin-guide/images/debug-logging.png)
+![SCREENSHOT: The Debug Logging section of the global config page with the toggle ON, showing "Debug logging active — expires in 2hr"](./images/debug-logging.png)
 
 ---
 
